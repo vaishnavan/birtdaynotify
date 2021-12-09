@@ -1,14 +1,14 @@
 const Birthday = require('../model/birthdaySchema.model');
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const cloudinary = require("../utils/cloudinary");
-const upload = require("../utils/multer");
+const cloudinary = require('../utils/cloudinary');
+const upload = require('../utils/multer');
 
-router.post("/postBirth", upload.single("image"), async (req, res) => {
+router.post('/postBirth', upload.single('image'), async (req, res) => {
     try {
         const result = await cloudinary.uploader.upload(req.file.path);
-        console.log("helllo")
-        console.log(result)
+        console.log('helllo');
+        console.log(result);
 
         let myBirthday = new Birthday({
             username: req.body.username,
@@ -22,8 +22,19 @@ router.post("/postBirth", upload.single("image"), async (req, res) => {
     } catch (error) {
         return res.status(404).json({ message: error.message });
     }
-})
+});
+
+router.get('/allBirthday', async (req, res) => {
+    try {
+        const allBirthday = await Birthday.find();
+
+        return res.status(200).json({
+            status: 200,
+            posts: allBirthday,
+        });
+    } catch (error) {
+        return res.status(400).json({ message: error.message });
+    }
+});
 
 module.exports = router;
-
-
