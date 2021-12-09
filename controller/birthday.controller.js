@@ -13,6 +13,7 @@ router.post('/postBirth', upload.single('image'), async (req, res) => {
         let myBirthday = new Birthday({
             username: req.body.username,
             dob: req.body.dob,
+            goal:req.body.goal,
             profile: result.secure_url,
             cloudinary_id: result.public_id,
         });
