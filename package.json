@@ -1,0 +1,30 @@
+{
+  "name": "birtdaynotify",
+  "version": "1.0.0",
+  "description": "birthday notification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaishnavan/birtdaynotify.git"
+  },
+  "author": "vaishnavan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaishnavan/birtdaynotify/issues"
+  },
+  "homepage": "https://github.com/vaishnavan/birtdaynotify#readme",
+  "dependencies": {
+    "cloudinary": "^1.27.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.0",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  }
+}
