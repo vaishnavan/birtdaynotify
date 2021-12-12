@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webshine Learning</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(167, 162, 162);
+      }
+      .offline_main_heading {
+        text-align: center;
+        background-color: #336278;
+        padding: 0.5px;
+        color: rgb(231, 227, 227);
+        letter-spacing: 0.5px;
+      }
+      .offline_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+      }
+      .offline_content_head {
+        padding: 10px;
+      }
+      .offline_content_head p {
+        text-align: center;
+        line-height: 21px;
+      }
+      .offline_btn {
+        text-align: center;
+      }
+      .offline_btn button {
+        background-color: #336278;
+        padding: 8px 25px;
+        color: rgb(219, 217, 217);
+        letter-spacing: 1.5px;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+      }
+      .offline_main_footer {
+        width:   100%;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        background-color: #336278;
+        padding: 0.5px;
+        color: rgb(231, 227, 227);
+        letter-spacing: 0.5px;
+      }
+
+      /* media queries */
+      @media (max-width: 992px) {
+        .offline_content_head p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .offline_content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 400px;
+        }
+      }
+      @media (max-width: 768px) {
+        .offline_content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 300px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .offline_main_heading h2{
+          font-size: 14px;
+        }
+        .offline_main_footer h2{
+          font-size: 12px;
+        }
+
+      }
+      @media (max-width: 350px) {
+        .offline_content {
+          width: 200px;
+        }
+        .offline_content_head p {
+          font-size: 12px;
+        }
+      }
+      /* media quries end */
+    </style>
+  </head>
+  <body>
+    <div class="offline_main">
+      <div class="offline_main_heading">
+        <h2>Welcome to Webshine Learning</h2>
+      </div>
+
+      
+      <div class="offline_content">
+        <div class="offline_content_head">
+          <p>
+            Webshine is an online learning platform for all the new learners who
+            are keen to learn the web technologies.Learn web development at your
+            own place. Each aspect of creating websites and applications a
+            unique set of skills.Webshine offers a 4 months program to bring you
+            up to speed on modern front-end, back-end and full-stack web
+            development practices skills.
+          </p>
+        </div>
+        <div class="offline_btn">
+          <button>Connect to Internet</button>
+        </div>
+      </div>
+
+
+      <div class="offline_main_footer">
+        <h2>webshine2020@gmail.com | +91 9047609410 | +91 7904021944</h2>
+      </div>
+    </div>
+  </body>
+</html>

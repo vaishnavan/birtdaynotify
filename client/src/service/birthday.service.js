@@ -6,4 +6,8 @@ const postBirthday = mydata => {
     return axios.post(`${API_URL}/postBirth`, mydata);
 };
 
-export { postBirthday };
+const getBirthday = () => {
+    return axios.get(`${API_URL}/allBirthday`);
+}
+
+export { postBirthday, getBirthday };

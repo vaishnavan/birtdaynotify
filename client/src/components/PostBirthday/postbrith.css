@@ -1,0 +1,71 @@
+.toggle-btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.input-btn button{
+    padding: 7px 30px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(82, 82, 255);
+    color: white;
+    font-size: 16px;
+}
+
+.input-btn button:hover{
+    background-color: rgb(43, 29, 238);
+}
+.birth-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(224, 224, 224);
+    width: 420px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.birth-form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.birth-input input{
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border: 1px solid blue;
+    font-size: 1rem;
+}
+.birth-input input[type="file"]{
+    border: none;
+}
+.birth-input{
+    margin: 10px 0;
+}
+.birth-input input[type="date"]{
+    /* width: 160px; */
+    outline: none;
+}
+.birth-myBtn input[type="submit"]{
+    padding: 7px 20px;
+    cursor: pointer;
+    background-color: rgb(94, 94, 247);
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+.birth-myBtn input[type="submit"]:hover{
+    background-color: blue;
+}
+
+@media (max-width:600px) {
+    .birth-form{
+        width: 320px;
+    }
+    .birth-input input{
+        width: 90%;
+    }
+}
